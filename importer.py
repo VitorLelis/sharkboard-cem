@@ -32,6 +32,7 @@ def _load_results(connection, season: str) -> pd.DataFrame:
         INNER JOIN events AS e
             ON e.id = r.event_id
         WHERE m.season = %s
+          AND m.tag = 'CEM'
           AND r.from_relay = FALSE
           AND e.stroke IN ('FREE', 'BREAST', 'BACK', 'FLY', 'IM')
           AND r.position IS NOT NULL

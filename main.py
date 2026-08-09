@@ -2,6 +2,7 @@ import os
 import psycopg2
 from dotenv import load_dotenv
 from importer import import_positions
+from transformer import calculate_rankings
 
 def get_database_connection():
     return psycopg2.connect(
@@ -22,6 +23,9 @@ connection = get_database_connection()
 
 try:
     positions = import_positions(connection=connection, season=season)
+    ranks = calculate_rankings(positions)
+
+    print(ranks)
 
 finally:
     connection.close()
