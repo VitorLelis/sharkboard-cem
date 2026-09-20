@@ -445,7 +445,7 @@ def generate_report(
         "BREAST": "CEM - Bruços",
         "BACK": "CEM - Costas",
         "FLY": "CEM - Mariposa",
-        "IM": "CEM - Estilos",
+        "MEDLEY": "CEM - Estilos",
         "COMPLETE": "CEM - Nadador Completo",
     }
 
@@ -463,8 +463,8 @@ def generate_report(
         ("F", "BACK"),
         ("M", "FLY"),
         ("F", "FLY"),
-        ("M", "IM"),
-        ("F", "IM"),
+        ("M", "MEDLEY"),
+        ("F", "MEDLEY"),
         ("M", "COMPLETE"),
         ("F", "COMPLETE"),
     ]

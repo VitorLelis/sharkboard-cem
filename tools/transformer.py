@@ -12,7 +12,7 @@ POINTS = {
     8: 1,
 }
 
-STROKES = ("FREE", "BREAST", "BACK", "FLY", "IM")
+STROKES = ("FREE", "BREAST", "BACK", "FLY", "MEDLEY")
 GENDERS = ("M", "F")
 
 POSITION_COLUMNS = ["1º","2º","3º","4º","5º","6º","7º","8º"]

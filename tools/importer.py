@@ -6,10 +6,10 @@ MIN_DISTANCES = {
     "BREAST": 2,
     "BACK": 2,
     "FLY": 2,
-    "IM": 2,
+    "MEDLEY": 2,
 }
 
-STROKES = ("FREE", "BREAST", "BACK", "FLY", "IM")
+STROKES = ("FREE", "BREAST", "BACK", "FLY", "MEDLEY")
 GENDERS = ("M", "F")
 
 POSITION_COLUMNS = ["1º","2º","3º","4º","5º","6º","7º","8º"]
@@ -34,7 +34,7 @@ def _load_results(connection, season: str) -> pd.DataFrame:
         WHERE m.season = %s
           AND m.tag = 'CEM'
           AND r.from_relay = FALSE
-          AND e.stroke IN ('FREE', 'BREAST', 'BACK', 'FLY', 'IM')
+          AND e.stroke IN ('FREE', 'BREAST', 'BACK', 'FLY', 'MEDLEY')
           AND r.position IS NOT NULL
     """
 

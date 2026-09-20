@@ -6,7 +6,7 @@ STROKES = (
     "BREAST",
     "BACK",
     "FLY",
-    "IM",
+    "MEDLEY",
     "COMPLETE",
 )
 
